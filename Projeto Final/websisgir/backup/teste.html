@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="decription" content="">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+ <!-- Bootstrap -->
+ <link rel="stylesheet" href="css/bootstrap-responsive.css">
+ <link rel="stylesheet" href="css/bootstrap.css">
+ 
+ <!-- Styles -->
+ <link  rel="stylesheet" href="css/style.css">
+ 
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ 
+ <!-- Include all compiled plugins (below), or include individual files as needed -->
+ <script type="text/javascript" src="js/bootstrap.js"></script>
+ 
+ <title>SISGIR - Sistema de Gerenciamento de Institui&ccedil;&otilde;es Religiosas</title>
+ 
+ <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+ <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+ <!--[if lt IE 9]>
+ <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+ <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+ <![endif]-->
+</head>
+	<body>
+	
+		<nav class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+			<div class="container-fluid">
+				
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+					</button>
+				
+				<!-- Logo -->
+					
+					<a class="navbar-brand"></a>
+				</div>
+			
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<!-- Menu -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Sistema<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+								<li><a href="#">Igrejas e Congregações</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Contas de Usuários</a></li>
+							</ul>
+						<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Secretaria <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="cadastro_membro.html">Cadastro de Membros</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Tesouraria <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Fornecedores</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Patrimônio</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Financeiro</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Relatórios<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="relatorio_secretaria.html">Secretaria</a></li>
+								<li class="divider"></li>
+								<li><a href="relatorio_financeiro.html">Financeiro</a></li>
+							</ul>
+					</ul>
+
+					<div class="nav navbar-nav navbar-right">
+						<li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;Usuário</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;Ajuda</a></li>
+						<li><a href="index.html"><span class="glyphicon glyphicon-off"></span>&nbsp;Sair</a></li>
+					</div>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+	
+		<!-- Aqui começa o conteudo -->
+		<div class="wrapper" role="main">
+			<div class="container-fluid">
+				<h3 class="page-header">Título da Página</h3>
+		
+				<div class="row"><!-- Aqui começa a primeira linha  com 3 colunas de 4grid-->
+                    <div class="col-lg-3 col-md-4"><!-- Aqui começa a primeira coluna da grid com 4-->
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">Bootstrap Panels</h3><!-- Título da coluna -->
+							</div>
+							<div class="panel-body">
+								<p>Texto</p><!-- Conteudo da coluna -->
+								
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-3 col-md-4"><!-- Aqui começa a segunda coluna da grid com 4-->
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">Bootstrap Input</h3><!-- Título da coluna -->
+							</div>
+							<div class="panel-body"><!-- Conteudo da coluna -->
+								<div class="form-group"><!-- Bootstrap Input -->
+									<label for="usr">Name:</label>
+									<input type="text" class="form-control" id="usr">
+								</div>
+								<div class="form-group">
+									<label for="pwd">Password:</label>
+									<input type="password" class="form-control" id="pwd">
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-3 col-md-4"><!-- Aqui começa a terceira coluna da grid com 4-->
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">Bootstrap Textarea</h3>
+							</div>
+							<div class="panel-body">
+								<div class="form-group">
+									<label for="comment">Comment:</label>
+									<textarea class="form-control" rows="4" id="comment"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>	
+                <!-- /.row -->
+				
+				<div class="row"><!-- Aqui começa a primeira linha  com 3 colunas de 4grid-->
+                    <div class="col-lg-3 col-md-4">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">Bootstrap Checkboxes</h3>
+							</div>
+							<div class="panel-body">
+								<div class="checkbox">
+									<label><input type="checkbox" value="">Option 1</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="">Option 2</label>
+								</div>
+								<div class="checkbox disabled">
+								 <label><input type="checkbox" value="" disabled>Option 3</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-3 col-md-4">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">Bootstrap Checkboxes em Linhas</h3>
+							</div>
+							<div class="panel-body">
+								<label class="checkbox-inline"><input type="checkbox" value="">Option 1</label>
+								<label class="checkbox-inline"><input type="checkbox" value="">Option 2</label>
+								<label class="checkbox-inline"><input type="checkbox" value="">Option 3</label>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-3 col-md-4">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">Bootstrap Radio Buttons</h3>
+							</div>
+							<div class="panel-body">
+								<div class="radio">
+									<label><input type="radio" name="optradio">Option 1</label>
+								</div>
+								<div class="radio">
+								 <label><input type="radio" name="optradio">Option 2</label>
+								</div>
+								<div class="radio disabled">
+								 <label><input type="radio" name="optradio" disabled>Option 3</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>	
+                <!-- /.row -->
+				<div class="form-group col-lg-3 col-md-4">
+					<label for="sel1">Select list:</label>
+					<select class="form-control" id="sel1">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</div>
+			</div>
+			<!-- Fim do conteudo -->
+		</div>
+	
+	</body>
+</html>

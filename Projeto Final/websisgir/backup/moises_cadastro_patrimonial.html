@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="decription" content="">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+ <!-- Bootstrap -->
+ <link rel="stylesheet" href="css/bootstrap-responsive.css">
+ <link rel="stylesheet" href="css/bootstrap.css">
+ 
+ <!-- Styles -->
+ <link  rel="stylesheet" href="css/style.css">
+ 
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ 
+ <!-- Include all compiled plugins (below), or include individual files as needed -->
+ <script type="text/javascript" src="js/bootstrap.js"></script>
+ 
+ <title>SISGIR - Sistema de Gerenciamento de Institui&ccedil;&otilde;es Religiosas</title>
+ 
+ <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+ <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+ <!--[if lt IE 9]>
+ <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+ <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+ <![endif]-->
+</head>
+	<body>
+	
+		<nav class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+			<div class="container">
+				
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+					</button>
+				
+				<!-- Logo -->
+					
+					<a class="navbar-brand" href="home.html">SISGIR</a>
+				</div>
+			
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<!-- Menu -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Sistema<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+								<li><a href="cadastro_estabelecimento.html">Igrejas e Congregações</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Contas de Usuários</a></li>
+							</ul>
+						<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Secretaria <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="cadastro_membro.html">Cadastro de Membros</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Tesouraria <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="cadastro_fornecedor.html">Fornecedores</a></li>
+								<li class="divider"></li>
+								<li><a href="cadastro_patrimonial.html">Patrimônio</a></li>
+								<li class="divider"></li>
+								<li class="dropdown-submenu">
+									<a tabindex="-1">Financeiro</a>
+									<ul class="dropdown-menu">
+										<li><a href="cadastro_despesas.html">Lançamento de Despesas</a></li>
+										<li><a href="cadastro_receitas.html">Lançamento de Receitas</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Relatórios<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="relatorio_secretaria.html">Secretaria</a></li>
+								<li class="divider"></li>
+								<li><a href="relatorio_financeiro.html">Financeiro</a></li>
+							</ul>
+					</ul>
+
+					<div class="nav navbar-nav navbar-right">
+						<li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;Usuário</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;Ajuda</a></li>
+						<li><a href="index.html"><span class="glyphicon glyphicon-off"></span>&nbsp;Sair</a></li>
+					</div>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+	
+		<!-- Aqui começa o conteudo -->
+		<div class="wrapper" role="main">
+			<div class="container-fluid">
+				
+				<h3 class="page-header">Controle Patrimonial</h3>
+		        
+				<form action="add.html">
+					<h4 class="page-header">Dados do Bem</h4>
+					<div class="row">
+						<div class="form-group col-md-2">
+							<label for="codigo">Fornecedor: Código</label>
+							<input type="text" class="form-control" id="codigo" placeholder="Digite o Código do Fornecedor">
+						</div>
+						<div class="form-group col-md-4">
+							<label for="nome">Descrição:</label>
+							<input type="text" class="form-control" id="nome" placeholder="Nome do Fornecedor">
+						</div>
+						
+					</div>
+					
+					<div class="row">
+						<div class="form-group col-md-2">
+							<label for="codigo">Congregação: Código</label>
+							<input type="text" class="form-control" id="codigo" placeholder="Digite o Código do Fornecedor">
+						</div>
+						<div class="form-group col-md-4">
+							<label for="nome">Descrição:</label>
+							<input type="text" class="form-control" id="nome" placeholder="Nome do Fornecedor">
+						</div>
+						
+					</div>
+					
+					<div class="row">
+						<div class="form-group col-md-6">
+							<label for="item">Item</label>
+							<input type="text" class="form-control" id="item" placeholder="Digite o Item">
+						</div>
+						<div class="form-group col-md-2">
+							<label for="tipo">Tipo de Aquisição:</label>
+								<select class="form-control">	
+									<option value= selected></option>
+									<option>Compra</option>
+									<option>Permuta</option>
+									<option>Doação</option>
+									<option>Avaliação</option>
+									<option>Apropriação</option>
+									<option>Locação</option>
+									<option>Comodato</option>
+									<option>Leasing</option>
+									<option>Consórcio</option>
+								</select>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="form-group col-md-3">
+							<label for="item">Número do Item:</label>
+							<input type="text" class="form-control" id="item" placeholder="Digite o Item">
+						</div>
+						<div class="form-group col-md-3">
+							<label for="bem">Número do Bem:</label>
+							<input type="text" class="form-control" id="bem" placeholder="Digite o Bem">
+						</div>
+						<div class="form-group col-md-3">
+							<label for="serie">Número de Série</label>
+							<input type="text" class="form-control" id="serie" placeholder="Digite o Número de Série">
+						</div>
+					</div>
+					<hr>
+					
+					
+					<h4 class="page-header">Dados Complementares</h4>
+					<div class="row">
+						 <div class="form-group col-md-12">
+							<label for="descricao">Descrição:</label>
+							<textarea class="form-control" rows="3"id="descricao"></textarea>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="form-group col-md-3">
+							<label for="dt_aquis">Data de Aquisição:</label>
+							<input type="text" class="form-control" id="dt_aquis" placeholder="Digite a Data de Aquisição">
+						</div>
+						<div class="form-group col-md-3">
+							<label for="dt_cad">Data de Cadastro</label>
+							<input type="text" class="form-control" id="dt_cad" placeholder="Digite a Data de Cadastro">
+						</div>
+						<div class="form-group col-md-3">
+							<label for="dt_baixa">Data da Baixa</label>
+							<input type="text" class="form-control" id="dt_baixa" placeholder="Digite a Data da Baixa">
+						</div>
+						<div class="form-group col-md-3">
+							<label for="garantia">Vencimento da Garantia</label>
+							<input type="text" class="form-control" id="garantia" placeholder="Digite o Vencimento da Garantia">
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="form-group col-md-3">
+							<label for="nf">Número de NF:</label>
+							<input type="text" class="form-control" id="nf" placeholder="Digite Número da Nota Fiscal">
+						</div>
+						<div class="form-group col-md-5">
+							<label for="chave">Chave da NFe</label>
+							<input type="text" class="form-control" id="chave" placeholder="Digite a Chave da NFe:">
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="form-group col-md-3">
+							<label for="vl_orig">Valor Original:</label>
+							<input type="text" class="form-control" id="vl_orig" placeholder="Digite o Valor Original">
+						</div>
+						<div class="form-group col-md-3">
+							<label for="vl_comp">Valor da Compra:</label>
+							<input type="text" class="form-control" id="vl_comp" placeholder="Digite o Valor da Compra">
+						</div>
+						<div class="form-group col-md-3">
+							<label for="vl_baixa">Valor da Baixa</label>
+							<input type="text" class="form-control" id="vl_baixa" placeholder="Digite o Valor da Baixa">
+						</div>
+						
+					</div>
+					
+					
+									
+					<div class="row">
+					<div class="col-md-12">
+						<button type="submit" class="btn btn-primary">Salvar</button>
+						<a href="add.html" class="btn btn-default">Cancelar</a>
+					</div>
+					</div>
+				
+				</form>
+				</div>
+			    
+			</div>	
+		</div>
+		<!-- Fim do conteudo -->
+	
+	
+	</body>
+</html>
